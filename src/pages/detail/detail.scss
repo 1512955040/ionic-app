@@ -1,0 +1,146 @@
+page-detail {
+    .clear{
+                clear: both;
+            }
+    ion-header{
+        .toolbar-md{
+            height: 80px;
+            font-size: 1rem!important;
+            .toolbar-background-md{
+               background: #2468CD!important; 
+            }
+            button.bar-button-default-md{
+                color: white;
+                width: 44px;
+               
+                .button-inner .back-button-icon{
+                    font-size: 3.2rem;
+                }
+            }
+            .back-button-md{
+                min-width: 0!important;
+                margin-top: 3px;
+            }
+            div.toolbar-content{
+                position: absolute;
+                width: 100%;
+                left: calc(50% - 3.8rem); 
+                span.detailSpan{
+                    font-size: 2.6rem;
+                    color: white;
+                }
+            }
+        }
+    }
+    ion-content{
+        .fixed-content{
+//           border: 1px solid red #e5e8ed;
+        }
+       .scroll-content{
+            padding: 0!important;
+            background: white;
+            .detail_title{
+                width: 100%;
+                min-height: 250px;
+                background: white;
+                font-size: 1rem!important;
+                .detail_conent0{
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    padding-top: 12px;
+                    span{
+                        display: inline-block;
+                    }
+                    .detail{
+                        width: 25%;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: right;
+                        span{
+                            width: 60px;
+                            height: 100%;
+                            background: #67c239;
+                            text-align: center;
+                            border-radius: 4px;
+                            font-size: 1.5rem;
+                            color: white;
+                        }                
+                    }
+                    .detail_cons{
+                        width: calc(100% - 150px);
+                        line-height: 30px;
+                        text-align: left;
+                        float: right;
+                        font-size: 1.6rem;
+                        margin-left: 5vh;
+                        padding-right: 5vh;
+                        word-wrap:break-word;
+                        word-break:break-all;
+                    }
+                    .detail0{
+                        font-size: 1.6rem;
+                        color: gray;
+                        font-weight: 500;
+                        opacity: .7;
+                    }
+                    .detail_cons0{
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        color: black;
+//                      opacity: .8;
+                    }
+                    .detail_cons1{
+                        height: auto;
+                        line-height: 30px;
+                    }
+                }
+                .detail_conent1{
+                    padding-bottom: 20px;
+                }
+            }
+            .babelback{
+                width: 100%;
+                height: 6px;
+                background: #e5e8ed;
+            }
+            .detail_title1{
+                min-height: 140px;
+            }
+            .detail_title2{
+                min-height: 240px;
+                font-size: 1rem!important;
+                .forButton{
+                    text-align: center;
+                    margin-top: 20px;
+                    padding-bottom: 20px;
+                    button{
+                        width: 40%;
+                        height: 40px;
+                        border-radius: 8px!important;
+                    }
+                    button:nth-child(1){
+                        background: white;
+                        border: 1px solid #B1B2B6;
+                        .button-inner{
+                            color: red;
+                            font-size: 1.6rem;
+                          font-weight: 550;
+                        }
+                    }
+                    button:nth-child(2){
+                      margin-left: 5vw;
+                        .button-inner{
+                            font-size: 1.6rem;
+                            font-weight: 550;
+                        }
+                    }
+                }
+                
+            }   
+        }
+
+        
+    }
+   
+}

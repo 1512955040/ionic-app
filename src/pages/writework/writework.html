@@ -1,0 +1,65 @@
+<!--
+  Generated template for the WriteworkPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>回单</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div id="intList">
+		<ul id="userMsg">
+			<li>
+				{{productType}}
+			</li>
+			<li>{{productName}}</li>
+		</ul>
+		<ion-list>
+			<ion-item>
+				<ion-label>请输入产品序列号</ion-label>
+				<ion-input [(ngModel)]="productId" ></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label>在保状态</ion-label>
+				<ion-select [(ngModel)]="protect" cancelText="取消"  okText="确定">
+					<ion-option value="37">未知</ion-option>
+					<ion-option value="38">在保</ion-option>
+					<ion-option value="39">非在保</ion-option>
+				</ion-select>
+			</ion-item>
+			<ion-item>
+				<ion-label>故障类别</ion-label>
+				<ion-select [(ngModel)]="fault" cancelText="取消" okText="确定"   >
+					<ion-option *ngFor="let item of faultType1;let i=index " [value]="item?.typeName" >{{item?.typeName}}</ion-option>
+				</ion-select>
+			</ion-item>
+			<ion-item>
+				<ion-label>请输入处理信息</ion-label>
+				<ion-textarea [(ngModel)]="desc"></ion-textarea>
+			</ion-item>
+		
+		</ion-list>
+		<div style="padding-left:16px;margin-bottom: 16px;">
+			<span style="color:#999999">相关图片</span>
+			<div>
+				<button ion-button (click)="openCamera()">相机拍摄</button>
+				<button ion-button (click)="openPhotos()">相册选择</button>
+				<div class="deleteText">长按图片可删除,最大可上传10张</div>
+			</div>
+			<div id="imgDiv">
+				<img *ngFor="let item of path;let i=index"  [src]="item" alt="" (press)="deletePhoto($event,i)">
+			</div>
+		</div>
+		<div id="submit_div">
+			<button ion-button color="light">取消</button>
+			<button ion-button [disabled]="status" (click)="submit()">确定</button>
+		</div>
+	</div>
+</ion-content>

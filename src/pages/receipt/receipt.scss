@@ -1,0 +1,260 @@
+page-receipt {
+ #navbar{
+     min-height: 80px;
+     width:100%;
+     background:#3779F9 !important;
+     padding-top:17px;
+     ion-icon{
+        font-size:22px;
+        float:right;
+        margin-top:4px;
+        position: absolute;
+        right: 3.5vw;
+     }
+     div{
+         color:#fff;
+         font-size:22px;
+         margin-top:0;
+         text-align: center;
+//       padding-right:17px;
+     }
+ }
+ #searchGroup{
+     width:100%;
+     text-align: center;
+     padding-left:0;
+     padding-bottom:0;
+     position:fixed;
+     z-index: 10000;
+     top:47px;
+     button{
+        background:#fff;
+        height:3.6rem;
+        width:3.6rem;
+        border:1px solid #fff;
+        box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
+        margin:0.4rem 0.2rem;
+     }
+     ion-icon{
+        color:#B0B0B0;
+        font-weight: 800;
+     } 
+     input{
+         width:80%;
+         border:1px solid #fff;
+         box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+         border-radius: 5px;
+         height:3.6rem;
+         margin:0.4rem 0.2rem;
+         padding-left:10px;
+     }
+ }
+    .list-menu{
+        width:92%;    
+        margin:0 auto;
+        margin-top:30px;
+        min-height:240px;
+//      border:1px solid #F8F8F8;
+        //box-shadow: 0px 0px 1px 1px #00000021 inset;
+//      box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
+        border: 1px solid darkgrey;
+        .menu-first{
+            width:92%;
+            margin:0 auto;
+            border-bottom:1px dashed #E3E3E3;
+            min-height:88px;
+            position:relative;
+            vertical-align:top;
+            font-size: 1rem!important;
+            .menu-first-icon{
+                width:20px;
+                height:20px;
+                border-radius:50%;
+                position: absolute;
+                top:40px;
+                font-size:13px;
+                color:#23851F;
+                background:#DFECFD;
+                margin-top:-10px;
+                text-align: center; 
+            }
+//          .menu-first-ul-first{
+//              height:100%;
+//              margin:0;
+//              display:inline-block;
+//              margin-left:28px;
+//              vertical-align:top;
+//              width:32%;
+//              li{
+//                  width: 100%;
+//                  height:50%;
+//                  padding-top:11px;
+//                  font-size:14px;
+//                  word-wrap:break-word;
+//                  word-break:break-all;
+//              }
+//          }
+            .detail_conents{
+                font-size: 1.2rem!important;
+                font-weight: 500;
+            }
+            .detail_conent0{
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    padding-top: 15px;
+                    span{
+                        display: inline-block;
+                    }
+                    .detail{
+                        width: 33%;
+                        height: 15px;
+                        line-height: 15px;
+                        text-align: left;
+                        overflow: hidden;
+                        span{
+                            width: 60px;
+                            height: 100%;
+//                          background: #67c239;
+                            text-align: center;
+                            border-radius: 4px;
+//                          font-size: 1.5rem;
+//                          color: white;
+                        }                
+                    }
+                    .detail_cons{
+                        width: 57%;
+//                      line-height: 30px;
+                        text-align: left;
+                        float: right;
+//                      font-size: 1.6rem;
+                        margin-left: 3vh;
+//                      padding-right: 5vh;
+                        word-wrap:break-word;
+                        word-break:break-all;
+                    }
+                    .detail0{
+                        padding-left: 25px; 
+//                      font-size: 1.6rem;
+//                      color: gray;
+//                      font-weight: bold;
+//                      opacity: .6;
+                    }
+                    .detail_cons0{
+                        margin-top: -3px;
+//                      font-size: 1.6rem;
+//                      font-weight: bold;
+//                      color: black;
+//                      opacity: .8;
+                    }
+                    .detail_cons1{
+                        height: auto;
+//                      line-height: 30px;
+                    }
+                }    
+//          .menu-first-ul-sec{ //秘钥口令 kuterapp
+//              height:100%;
+//              margin:0;
+//              display:inline-block;
+//              vertical-align:top;
+//              width:57%;
+//               word-wrap:break-word;
+//               word-break:break-all;
+//              li{
+//                  height:50%;
+//                  padding-top:11px;
+////                overflow:hidden;
+//                  font-size:14px;
+//                  text-align: right;
+//              }
+//          }
+    }
+ }       
+//          
+//          
+//          
+//      }
+        .menu-sec{
+            width:92%;
+            margin:0 auto;
+            min-height:150px;
+            .menu-sec-ul-first{
+                height:100%;
+                margin:0;
+                display:inline-block;
+                vertical-align:top;
+                width:32%;
+                li{
+                    font-size: 1.3rem!important;
+                    height: 30px;
+//                  line-height:30px;
+                    margin-top:15px;
+                    padding-left:15px;
+                    color: gray;
+                    font-weight: 500;
+                    opacity: .7;
+                    word-wrap:break-word;
+                    word-break:break-all;
+                }
+            }
+            .menu-sec-ul-sec{
+                height:100%;
+                margin:0;
+                display:inline-block;
+                vertical-align:top;
+                width:65%;
+                li{
+                    width: 100%;
+                    float: right;
+                    height: 30px;
+//                  line-height: 30px;
+                    margin-top:15px;
+                    text-align: left;
+                    font-weight: 500;
+                    color: black;
+                    word-wrap:break-word;
+                    word-break:break-all;
+                }
+                .labels{
+                    height: auto;
+                    padding-bottom: 8px;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+//  }
+    ion-label{
+        text-overflow:none!important;
+        white-space:normal;
+    }
+    .label-md{
+        margin:0!important;
+    }
+    ion-infinite-scroll-content{
+        height: 1px!important;
+        min-height: 1px;
+    }
+    .refresher-refreshing{
+        top: -3px!important;
+    }
+    .has-refresher > .scroll-content{
+        border-top: none!important;
+        overflow-y: auto!important;
+    }
+    .refresher-active{
+        top: -3px!important;
+    }
+        .clear{
+            clear:both
+        }
+        ul{
+            list-style: none;
+            padding:0;
+        }
+        .item-md.item-block .item-inner{
+            border-bottom: none!important;
+        }
+    }
+

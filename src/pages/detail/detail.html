@@ -1,0 +1,112 @@
+<!--
+  Generated template for the DetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+	
+  <ion-navbar>
+    	<span class="detailSpan">工单详情</span>
+  </ion-navbar>
+	
+</ion-header>
+
+<ion-content padding>
+	<div class="detail_title">
+			<div class="detail_conent0">
+					<span class="detail">
+							<span>{{datas?.orderStatusStr}}</span>
+					</span>
+					<span class="detail_cons">{{datas?.orderNumber}}</span>
+					<div class="clear"></div>
+			</div>
+			<div class="detail_conent0">
+					<span class="detail detail0">
+						客户名称
+					</span>
+					<span class="detail_cons detail_cons0">{{datas?.customerName}}</span>
+					<div class="clear"></div>
+			</div>	
+			<div class="detail_conent0">
+					<span class="detail detail0">
+						联系人
+					</span>
+					<span class="detail_cons detail_cons0">{{datas?.contactName}}</span>
+					<div class="clear"></div>
+			</div>
+			<div class="detail_conent0">
+					<span class="detail detail0">
+							联系电话
+					</span>
+					<span class="detail_cons detail_cons0" >{{datas?.customerPhone}}</span>
+					<div class="clear"></div>
+			</div>
+			<div class="detail_conent0 detail_conent1">
+					<span class="detail detail0">
+							服务请求
+					</span>
+					<span class="detail_cons detail_cons0 detail_cons1">{{datas?.serviceRequest}}</span>
+					<div class="clear"></div>
+			</div>
+	</div>
+		<div class="babelback"></div>
+		<div class="detail_title detail_title1">
+			<div class="detail_conent0">
+					<span class="detail detail0">
+							产品名称
+					</span>
+					<span class="detail_cons detail_cons0">{{datas?.productName}}</span>
+					<div class="clear"></div>
+			</div>	
+			<div class="detail_conent0">
+					<span class="detail detail0">
+							产品型号
+					</span>
+					<span class="detail_cons detail_cons0">{{datas?.productModel}}</span>
+					<div class="clear"></div>
+			</div>
+			<div class="detail_conent0">
+					<span class="detail detail0">
+							产品类别
+					</span>
+					<span class="detail_cons detail_cons0">{{datas?.productType}}</span>
+					<div class="clear"></div>
+			</div>
+	</div>
+	<div class="babelback"></div>
+	<div class="detail_title detail_title1 detail_title2">
+			<div class="detail_conent0">
+					<span class="detail detail0">
+							紧急程度
+					</span>
+					<span class="detail_cons detail_cons0">{{datas?.emergencyStr}}</span>
+					<div class="clear"></div>
+			</div>	
+			<div class="detail_conent0">
+					<span class="detail detail0">
+							委派部门
+					</span>
+					<span class="detail_cons detail_cons0">{{datas?.departmentName}}</span>
+					<div class="clear"></div>
+			</div>
+			<div class="detail_conent0">
+					<span class="detail detail0">
+							渠道
+					</span>
+					<span class="detail_cons detail_cons0">{{datas?.channel}}</span>
+					<div class="clear"></div>
+			</div>
+			<div class="detail_conent0">
+					<span class="detail detail0">
+							创建时间
+					</span>
+					<span class="detail_cons detail_cons0">{{datas?.createTime|date:"yyyy.MM.dd  HH:mm:ss"}}</span>
+					<div class="clear"></div>
+			</div>
+			<div class="forButton" *ngIf="navParamsa.data.tabsn!=='b'">
+				<button ion-button (click)="doConfirm()">拒&nbsp;单</button>
+				<button ion-button (click)="pushMorePage()">回&nbsp;单</button>
+			</div>
+	</div>
+</ion-content>
